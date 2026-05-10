@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bank Finder App</title>
+  <title>GreenSeat App</title>
   <style>
     body {
       margin: 0;
@@ -46,6 +46,12 @@
       margin-bottom: 15px;
     }
 
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
     .button {
       display: inline-block;
       padding: 12px 20px;
@@ -56,12 +62,6 @@
       margin-top: 10px;
     }
 
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
     footer {
       text-align: center;
       padding: 20px;
@@ -69,27 +69,21 @@
       font-size: 14px;
       color: #aaa;
     }
+
+    footer a {
+      color: #2e7d5b;
+      text-decoration: none;
+      margin: 0 10px;
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Bank Finder</h1>
+  <h1>GreenSeat</h1>
   <p>Finde den perfekten Spot zum Entspannen</p>
 </header>
 
 <div class="container">
-
-  <div class="section card">
-    <h2>Karte entdecken</h2>
-    <img src="map-placeholder.jpg" alt="Karte">
-    <p>Sieh dir alle verfügbaren Bänke in deiner Umgebung an und entdecke neue Orte.</p>
-  </div>
-
-  <div class="section features">
-    <div class="card">
-      <h3>Favoriten</h3>
-      <p>Speichere deine Lieblingsbänke und greife jederzeit darauf zu.</p>
-    </div>
 
 </html>
