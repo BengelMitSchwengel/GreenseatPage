@@ -3,107 +3,197 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GreenSeat</title>
-
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="GreenSeat ist die App, um die besten Plätze draußen zu entdecken, Lieblingsorte zu speichern und neue Bänke zu teilen – mit minimaler Datennutzung.">
+  <meta name="theme-color" content="#1f5c47">
+  <title>GreenSeat – Entdecke die besten Plätze draußen</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="GreenSeat Startseite">
+      <span class="brand-mark">GS</span>
+      <span class="brand-text">
+        <strong>GreenSeat</strong>
+        <small>Plätze draußen entdecken</small>
+      </span>
+    </a>
 
-<header>
-  <h1>GreenSeat</h1>
-  <nav>
-    <a href="#screens">Screens</a>
-    <a href="#features">Features</a>
+    <nav class="site-nav" aria-label="Hauptnavigation">
+      <a href="#vorteile">Vorteile</a>
+      <a href="#screens">Screens</a>
+      <a href="#privacy">Datenschutz</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <span class="eyebrow">App für grüne Pausen</span>
+        <h1>Finde die besten Plätze draußen – schnell, ruhig und ohne unnötiges Tracking.</h1>
+        <p class="lead">
+          GreenSeat zeigt dir Bänke, Lieblingsorte und neue Spots in einer klaren Oberfläche.
+          Die App bleibt schlank: nur eine anonymisierte Nutzer-ID, keine eigenen Tracker.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#screens">Screens ansehen</a>
+          <a class="button button-secondary" href="privacy.html">Datenschutz lesen</a>
+        </div>
+
+        <ul class="hero-badges" aria-label="Kernaussagen">
+          <li>Keine eigenen Tracker</li>
+          <li>Anonymisierte Nutzer-ID</li>
+          <li>Google nur für Play Store / Werbung, falls genutzt</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="device-card device-card-main">
+          <img src="map.jpeg" alt="Kartenansicht der GreenSeat-App">
+        </div>
+        <div class="floating-card floating-card-top">
+          <span>Neue Plätze</span>
+          <strong>in deiner Nähe</strong>
+        </div>
+        <div class="floating-card floating-card-bottom">
+          <span>Datensparsam</span>
+          <strong>ohne Tracker</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="vorteile">
+      <div class="section-heading">
+        <span class="eyebrow">Warum GreenSeat</span>
+        <h2>Eine moderne App-Website mit klaren Vorteilen</h2>
+        <p>
+          Die wichtigsten Funktionen sind sofort sichtbar, damit Besucherinnen und Besucher
+          die App in wenigen Sekunden verstehen.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon">📍</div>
+          <h3>Entdecken</h3>
+          <p>Finde Bänke und Sitzplätze auf einer übersichtlichen Karte.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">❤️</div>
+          <h3>Speichern</h3>
+          <p>Merke dir Lieblingsorte und rufe sie später sofort wieder auf.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">➕</div>
+          <h3>Teilen</h3>
+          <p>Füge neue Plätze hinzu und hilf anderen, bessere Orte zu finden.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3>Datensparsam</h3>
+          <p>GreenSeat nutzt nur eine anonymisierte Nutzer-ID und keine eigenen Tracker.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="screens">
+      <div class="section-heading">
+        <span class="eyebrow">App-Vorschau</span>
+        <h2>So sieht GreenSeat aus</h2>
+        <p>Die Screens zeigen die wichtigsten Bereiche der App in einem klaren, modernen Look.</p>
+      </div>
+
+      <div class="screens-grid">
+        <article class="screen-card">
+          <img src="map.jpeg" alt="Kartenansicht mit verfügbaren Bänken">
+          <h3>Karte</h3>
+          <p>Alle Spots auf einen Blick.</p>
+        </article>
+        <article class="screen-card">
+          <img src="favorites.jpeg" alt="Favoritenansicht mit gespeicherten Orten">
+          <h3>Favoriten</h3>
+          <p>Lieblingsplätze immer griffbereit.</p>
+        </article>
+        <article class="screen-card">
+          <img src="addbench.jpeg" alt="Ansicht zum Hinzufügen einer neuen Bank">
+          <h3>Neuen Ort hinzufügen</h3>
+          <p>Spots direkt an die Community weitergeben.</p>
+        </article>
+        <article class="screen-card">
+          <img src="myprofile.jpeg" alt="Profilseite der GreenSeat-App">
+          <h3>Profil</h3>
+          <p>Alles Wichtige übersichtlich an einem Ort.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split-section">
+      <div class="split-content">
+        <span class="eyebrow">So funktioniert's</span>
+        <h2>Entdecken, speichern, teilen</h2>
+        <p>
+          GreenSeat führt dich mit wenigen Schritten zu schönen Plätzen draußen. Die Bedienung ist
+          bewusst einfach gehalten, damit die App schnell, verständlich und angenehm bleibt.
+        </p>
+      </div>
+
+      <div class="steps">
+        <article class="step-card">
+          <span class="step-number">01</span>
+          <h3>Ort finden</h3>
+          <p>Öffne die Karte und sieh sofort, wo sich passende Plätze befinden.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-number">02</span>
+          <h3>Favorit merken</h3>
+          <p>Speichere Orte, die dir gefallen, und finde sie später wieder.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-number">03</span>
+          <h3>Neue Plätze beitragen</h3>
+          <p>Ergänze neue Bänke und mache die Karte für alle besser.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section privacy-callout" id="privacy">
+      <div>
+        <span class="eyebrow">Datenschutz</span>
+        <h2>Keine Tracker, nur das Nötigste</h2>
+        <p>
+          GreenSeat speichert keine personenbezogenen Daten. Falls die App eine Identifikation
+          benötigt, wird nur eine anonymisierte Nutzer-ID verwendet. Eigene Analyse-, Marketing-
+          oder Tracking-Dienste werden nicht eingesetzt.
+        </p>
+      </div>
+
+      <a class="button button-secondary" href="privacy.html">Zur Datenschutzerklärung</a>
+    </section>
+
+    <section class="cta" id="download">
+      <div class="cta-content">
+        <span class="eyebrow">Bereit für die nächste Pause?</span>
+        <h2>GreenSeat ist die ruhige Website für deine Outdoor-App.</h2>
+        <p>
+          Auf dieser Seite findest du alle Infos zur App, die Screens und die vollständige
+          Datenschutzerklärung an einem Ort.
+        </p>
+      </div>
+
+      <div class="cta-actions">
+        <div class="download-card">
+          <span>Verfügbarkeit</span>
+          <strong>Demnächst im Google Play Store</strong>
+          <p>Bis dahin findest du hier die wichtigsten Informationen und den Datenschutz.</p>
+        </div>
+        <a class="button button-primary" href="privacy.html">Datenschutz prüfen</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 GreenSeat</p>
     <a href="privacy.html">Datenschutz</a>
-  </nav>
-</header>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-content">
-    <h2>Entdecke die besten Plätze draußen</h2>
-    <p>Finde Bänke, speichere Lieblingsorte und teile neue Spots mit anderen.</p>
-    <a href="#" class="button">App herunterladen</a>
-  </div>
-</section>
-
-<!-- FEATURE IMAGE SECTION -->
-<section class="section">
-  <h2>Karte entdecken</h2>
-  <div class="highlight">
-    <img src="https://raw.githubusercontent.com/BengelMitSchwengel/GreenseatPage/main/map.jpeg" alt="Map">
-    <div>
-      <h3>Alle Spots auf einen Blick</h3>
-      <p>Sieh sofort, wo sich die besten Sitzplätze in deiner Umgebung befinden.</p>
-    </div>
-  </div>
-</section>
-
-<!-- SCREENSHOTS -->
-<section id="screens" class="section">
-  <h2>So sieht GreenSeat aus</h2>
-  <div class="screens">
-    <div class="phone"><img src="https://raw.githubusercontent.com/BengelMitSchwengel/GreenseatPage/main/map.jpeg"></div>
-    <div class="phone"><img src="https://raw.githubusercontent.com/BengelMitSchwengel/GreenseatPage/main/favorites.jpeg"></div>
-    <div class="phone"><img src="https://raw.githubusercontent.com/BengelMitSchwengel/GreenseatPage/main/addbench.jpeg"></div>
-    <div class="phone"><img src="https://raw.githubusercontent.com/BengelMitSchwengel/GreenseatPage/main/myprofile.jpeg"></div>
-  </div>
-</section>
-
-<!-- DETAIL SECTIONS -->
-<section class="section">
-  <div class="split">
-    <img src="https://raw.githubusercontent.com/BengelMitSchwengel/GreenseatPage/main/favorites.jpeg">
-    <div>
-      <h3>Speichere deine Lieblingsplätze</h3>
-      <p>Markiere Spots, die dir gefallen, und finde sie jederzeit wieder.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="split reverse">
-    <img src="https://raw.githubusercontent.com/BengelMitSchwengel/GreenseatPage/main/addbench.jpeg">
-    <div>
-      <h3>Teile neue Orte</h3>
-      <p>Füge neue Bänke hinzu und hilf der Community, noch bessere Plätze zu entdecken.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="split">
-    <img src="https://raw.githubusercontent.com/BengelMitSchwengel/GreenseatPage/main/myprofile.jpeg">
-    <div>
-      <h3>Dein Profil</h3>
-      <p>Verwalte deine gespeicherten Orte und Aktivitäten übersichtlich.</p>
-    </div>
-  </div>
-</section>
-
-<!-- FEATURES -->
-<section id="features" class="section">
-  <h2>Warum GreenSeat?</h2>
-  <div class="features">
-    <div class="feature">📍 Entdecken</div>
-    <div class="feature">❤️ Speichern</div>
-    <div class="feature">➕ Teilen</div>
-    <div class="feature">🌙 Dark Mode</div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta">
-  <h2>Bereit rauszugehen?</h2>
-  <p>Hol dir die App und entdecke neue Orte.</p>
-  <a href="#" class="button">Download</a>
-</section>
-
-<footer>
-  © 2026 GreenSeat
-  <a href="privacy.html">Datenschutz</a>
-</footer>
-
+  </footer>
 </body>
 </html>

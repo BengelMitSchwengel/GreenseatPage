@@ -1,51 +1,110 @@
-<!-- Speichere diesen Teil als separate Datei: privacy.html -->
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Datenschutz - GreenSeat</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0f0f0f;
-      color: #ffffff;
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    h1 {
-      color: #2e7d5b;
-    }
-
-    a {
-      color: #2e7d5b;
-    }
-  </style>
+  <meta name="description" content="Datenschutzerklärung von GreenSeat: keine personenbezogenen Daten, nur eine anonymisierte Nutzer-ID und keine eigenen Tracker.">
+  <title>Datenschutz – GreenSeat</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Zur Startseite von GreenSeat">
+      <span class="brand-mark">GS</span>
+      <span class="brand-text">
+        <strong>GreenSeat</strong>
+        <small>Datenschutzerklärung</small>
+      </span>
+    </a>
 
-<h1>Datenschutzerklärung</h1>
+    <nav class="site-nav" aria-label="Sekundärnavigation">
+      <a href="index.html">Startseite</a>
+      <a href="#grundsaetze">Grundsätze</a>
+      <a href="#google">Google</a>
+    </nav>
+  </header>
 
-<p>Die Nutzung der App <strong>GreenSeat</strong> ist in der Regel ohne Angabe personenbezogener Daten möglich.</p>
+  <main>
+    <section class="section">
+      <div class="section-heading">
+        <span class="eyebrow">Datenschutz bei GreenSeat</span>
+        <h1 style="font-size: clamp(2.2rem, 4vw, 4rem); margin: 0; line-height: 1.08; letter-spacing: -0.03em;">Wir speichern nur das Nötigste.</h1>
+        <p>
+          Diese Datenschutzerklärung beschreibt die Datenverarbeitung von GreenSeat in möglichst
+          klarer Form. Die App ist auf Datensparsamkeit ausgelegt.
+        </p>
+      </div>
 
-<h2>Keine Speicherung personenbezogener Daten</h2>
-<p>Diese App speichert <strong>keine persönlichen Daten</strong> der Nutzer. Es werden keine Benutzerkonten erstellt und keine personenbezogenen Informationen verarbeitet oder weitergegeben.</p>
+      <div class="feature-grid" id="grundsaetze">
+        <article class="feature-card">
+          <div class="feature-icon">1</div>
+          <h2 style="font-size: 1.15rem;">Keine personenbezogenen Daten</h2>
+          <p>GreenSeat benötigt kein Benutzerkonto und speichert keine Namen, E-Mail-Adressen oder ähnlichen persönlichen Angaben.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">2</div>
+          <h2 style="font-size: 1.15rem;">Anonymisierte Nutzer-ID</h2>
+          <p>Falls eine technische Zuordnung nötig ist, wird ausschließlich eine anonymisierte Nutzer-ID verwendet. Diese dient nur der Funktion der App.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">3</div>
+          <h2 style="font-size: 1.15rem;">Keine eigenen Tracker</h2>
+          <p>GreenSeat setzt keine eigenen Analyse-, Marketing- oder Tracking-Tools ein und erstellt keine Nutzerprofile.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">4</div>
+          <h2 style="font-size: 1.15rem;">Nur notwendige Funktionen</h2>
+          <p>Es werden nur technische Daten verarbeitet, soweit dies für den Betrieb der App zwingend erforderlich ist.</p>
+        </article>
+      </div>
+    </section>
 
-<h2>Standortdaten</h2>
-<p>Falls Standortdaten verwendet werden, geschieht dies ausschließlich lokal auf dem Gerät des Nutzers und wird nicht gespeichert oder an Dritte übermittelt.</p>
+    <section class="section split-section" id="google">
+      <div class="split-content">
+        <span class="eyebrow">Google-Dienste</span>
+        <h2>Google nur für Play Store und Werbung, falls eingebunden</h2>
+        <p>
+          Falls GreenSeat über den Google Play Store verteilt wird oder Google-Dienste für Werbung
+          eingebunden sind, verarbeitet Google eigene Daten nach den jeweiligen Google-Richtlinien.
+          Dazu können zum Beispiel Geräteinformationen oder technische Nutzungsdaten gehören.
+        </p>
+        <p>
+          GreenSeat selbst speichert diese Daten nicht und gibt sie nicht an andere Dritte weiter.
+          Es werden keine zusätzlichen Tracker von uns eingesetzt.
+        </p>
+      </div>
 
-<h2>Externe Dienste</h2>
-<p>Die App verwendet keine Tracking-Tools, Analyse-Tools oder externe Dienste zur Datenerfassung.</p>
+      <div class="steps">
+        <article class="step-card">
+          <span class="step-number">Google Play Store</span>
+          <h3>Verteilung und App-Bezug</h3>
+          <p>Beim Aufruf oder der Nutzung von Google-Diensten gelten die Datenschutzbestimmungen von Google.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-number">Google Ads / AdMob</span>
+          <h3>Werbung, falls aktiviert</h3>
+          <p>Werbedienste können technisch notwendige Daten verarbeiten. Das geschieht durch Google, nicht durch GreenSeat.</p>
+        </article>
+      </div>
+    </section>
 
-<h2>Kontakt</h2>
-<p>Bei Fragen zum Datenschutz kannst du dich jederzeit an den Entwickler wenden.</p>
+    <section class="privacy-callout">
+      <div>
+        <span class="eyebrow">Kurz zusammengefasst</span>
+        <h2>Keine eigenen Tracker, keine gespeicherten personenbezogenen Daten.</h2>
+        <p>
+          GreenSeat bleibt bewusst einfach: nur eine anonymisierte Nutzer-ID, keine Analyse durch uns
+          und keine weitergehende Speicherung persönlicher Informationen.
+        </p>
+      </div>
 
-<br>
-<a href="index.html">← Zurück zur Startseite</a>
+      <a class="button button-primary" href="index.html">Zurück zur Startseite</a>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <p>© 2026 GreenSeat</p>
+    <a href="index.html">Startseite</a>
+  </footer>
 </body>
 </html>
