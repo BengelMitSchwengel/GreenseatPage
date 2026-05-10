@@ -1,81 +1,46 @@
 <!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GreenSeat App</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0f0f0f;
-      color: #ffffff;
-    }
+background-color: #1c1c1c;
+border-radius: 16px;
+padding: 20px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
 
-    header {
-      padding: 20px;
-      text-align: center;
-      background-color: #121212;
-    }
+.card img {
+width: 100%;
+border-radius: 12px;
+margin-bottom: 15px;
+}
 
-    header h1 {
-      color: #2e7d5b;
-      margin: 0;
-    }
+.gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 20px;
+}
 
-    .container {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
+.button {
+display: inline-block;
+padding: 12px 20px;
+border-radius: 25px;
+background-color: #2e7d5b;
+color: white;
+text-decoration: none;
+margin-top: 10px;
+}
 
-    .section {
-      margin-bottom: 40px;
-    }
+footer {
+text-align: center;
+padding: 20px;
+background-color: #121212;
+font-size: 14px;
+color: #aaa;
+}
 
-    .card {
-      background-color: #1c1c1c;
-      border-radius: 16px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-    }
-
-    .card img {
-      width: 100%;
-      border-radius: 12px;
-      margin-bottom: 15px;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 12px 20px;
-      border-radius: 25px;
-      background-color: #2e7d5b;
-      color: white;
-      text-decoration: none;
-      margin-top: 10px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #121212;
-      font-size: 14px;
-      color: #aaa;
-    }
-
-    footer a {
-      color: #2e7d5b;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-  </style>
+footer a {
+color: #2e7d5b;
+text-decoration: none;
+margin: 0 10px;
+}
+</style>
 </head>
 <body>
 
@@ -86,92 +51,53 @@
 
 <div class="container">
 
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GreenSeat App</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0f0f0f;
-      color: #ffffff;
-    }
+  <div class="section card">
+    <h2>Karte entdecken</h2>
+    <img src="https://raw.githubusercontent.com/BengelMitSchwengel/GreenseatPage/main/map.jpeg" alt="Karte Screenshot">
+    <p>Sieh dir alle verfügbaren Bänke in deiner Umgebung an und entdecke neue Orte.</p>
+  </div>
 
-    header {
-      padding: 20px;
-      text-align: center;
-      background-color: #121212;
-    }
+  <div class="section">
+    <h2>App Screenshots</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/BengelMitSchwengel/GreenseatPage/main/map.jpeg" alt="Map View">
+      </div>
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/BengelMitSchwengel/GreenseatPage/main/favorites.jpeg" alt="Favorites View">
+      </div>
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/BengelMitSchwengel/GreenseatPage/main/addbench.jpeg" alt="Add Bench">
+      </div>
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/BengelMitSchwengel/GreenseatPage/main/myprofile.jpeg" alt="Profile View">
+      </div>
+    </div>
+  </div>
 
-    header h1 {
-      color: #2e7d5b;
-      margin: 0;
-    }
+  <div class="section card">
+    <h2>Features</h2>
+    <ul>
+      <li>📍 Interaktive Karte mit vielen Spots</li>
+      <li>❤️ Favoriten speichern</li>
+      <li>➕ Neue Bänke hinzufügen</li>
+      <li>👤 Persönliches Profil</li>
+      <li>🌙 Dark Mode</li>
+    </ul>
+  </div>
 
-    .container {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
+  <div class="section card">
+    <h2>Jetzt starten</h2>
+    <p>Lade die App herunter und finde deinen perfekten Spot.</p>
+    <a href="#" class="button">App herunterladen</a>
+  </div>
 
-    .section {
-      margin-bottom: 40px;
-    }
+</div>
 
-    .card {
-      background-color: #1c1c1c;
-      border-radius: 16px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-    }
+<footer>
+  © 2026 GreenSeat App |
+  <a href="privacy.html">Datenschutz (DSGVO)</a>
+</footer>
 
-    .card img {
-      width: 100%;
-      border-radius: 12px;
-      margin-bottom: 15px;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 12px 20px;
-      border-radius: 25px;
-      background-color: #2e7d5b;
-      color: white;
-      text-decoration: none;
-      margin-top: 10px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #121212;
-      font-size: 14px;
-      color: #aaa;
-    }
-
-    footer a {
-      color: #2e7d5b;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-  </style>
-</head>
-<body>
-
-<header>
-  <h1>GreenSeat</h1>
-  <p>Finde den perfekten Spot zum Entspannen</p>
-</header>
-
-<div class="container">
-
+</body>
 </html>
