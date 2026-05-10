@@ -257,26 +257,75 @@ main {
 
 .hero-visual {
   position: relative;
-  min-height: 620px;
+  min-height: 640px;
   display: grid;
   place-items: center;
 }
 
+/* --- Hero device pair --- */
+.hero-device-pair {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+}
+
 .device-card {
-  width: min(100%, 420px);
-  padding: 16px;
-  background: rgba(255, 255, 255, 0.74);
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  border-radius: 36px;
+  position: relative;
+  flex: 1;
+  max-width: 220px;
+  padding: 12px;
+  border-radius: 32px;
   box-shadow: var(--shadow);
-  backdrop-filter: blur(14px);
+  overflow: hidden;
+}
+
+.device-card-light {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(200, 220, 210, 0.7);
+  transform: translateY(0) rotate(-2deg);
+}
+
+.device-card-dark {
+  background: rgba(16, 28, 24, 0.92);
+  border: 1px solid rgba(30, 80, 60, 0.6);
+  transform: translateY(-28px) rotate(2deg);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.38), 0 0 0 1px rgba(120, 197, 154, 0.18);
 }
 
 .device-card img {
-  border-radius: 24px;
-  aspect-ratio: 9 / 18;
+  border-radius: 22px;
+  aspect-ratio: 9 / 19;
   object-fit: cover;
   width: 100%;
+  display: block;
+}
+
+.device-badge {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.badge-light {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--brand-strong);
+  border: 1px solid rgba(31, 92, 71, 0.16);
+}
+
+.badge-dark {
+  background: rgba(20, 36, 30, 0.9);
+  color: var(--accent);
+  border: 1px solid rgba(120, 197, 154, 0.28);
 }
 
 .floating-card {
@@ -301,13 +350,13 @@ main {
 }
 
 .floating-card-top {
-  top: 72px;
-  right: 8px;
+  top: 24px;
+  right: 0;
 }
 
 .floating-card-bottom {
   left: 0;
-  bottom: 74px;
+  bottom: 60px;
 }
 
 .section,
@@ -387,7 +436,7 @@ main {
 .screens-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
+  gap: 22px;
 }
 
 .screen-card {
@@ -397,20 +446,63 @@ main {
 }
 
 .theme-showcase {
-  padding: 18px;
-  gap: 16px;
+  padding: 20px;
+  gap: 18px;
 }
 
 .theme-pair {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
+  gap: 10px;
+  border-radius: 22px;
+  overflow: hidden;
 }
 
 .theme-shot {
   margin: 0;
   display: grid;
-  gap: 10px;
+  gap: 0;
+  overflow: hidden;
+}
+
+.theme-shot-light {
+  background: #f0f5f2;
+  padding: 10px 10px 0;
+  border-radius: 18px 0 0 18px;
+}
+
+.theme-shot-dark {
+  background: #0d1c17;
+  padding: 10px 10px 0;
+  border-radius: 0 18px 18px 0;
+}
+
+.theme-shot img {
+  border-radius: 12px 12px 0 0;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+
+.theme-label {
+  display: block;
+  padding: 8px 10px;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.theme-shot-light .theme-label {
+  color: var(--brand);
+  background: #f0f5f2;
+}
+
+.theme-shot-dark .theme-label {
+  color: var(--accent);
+  background: #0d1c17;
 }
 
 .screen-card img {
@@ -421,25 +513,16 @@ main {
   background: #edf4ef;
 }
 
-.theme-label {
-  display: inline-flex;
-  width: fit-content;
-  padding: 6px 10px;
-  border-radius: 999px;
-  background: rgba(31, 92, 71, 0.08);
-  color: var(--brand);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
 .screen-card h3 {
   font-size: 1.08rem;
+  margin: 0;
+  color: var(--brand-strong);
 }
 
 .screen-card p {
   font-size: 0.96rem;
+  margin: 0;
+  color: var(--muted);
 }
 
 .split-section {
@@ -539,7 +622,15 @@ main {
   }
 
   .hero-visual {
-    min-height: 560px;
+    min-height: 480px;
+  }
+
+  .hero-device-pair {
+    gap: 12px;
+  }
+
+  .device-card {
+    max-width: 180px;
   }
 
   .feature-grid,
@@ -577,21 +668,19 @@ main {
   }
 
   .hero-visual {
-    min-height: 460px;
+    min-height: 360px;
+  }
+
+  .hero-device-pair {
+    gap: 8px;
   }
 
   .device-card {
-    width: min(100%, 340px);
+    max-width: 150px;
   }
 
-  .floating-card-top {
-    right: 0;
-    top: 20px;
-  }
-
-  .floating-card-bottom {
-    left: 0;
-    bottom: 22px;
+  .device-card-dark {
+    transform: translateY(-18px) rotate(2deg);
   }
 
   .feature-grid,
@@ -601,6 +690,14 @@ main {
 
   .theme-pair {
     grid-template-columns: 1fr;
+  }
+
+  .theme-shot-light {
+    border-radius: 18px 18px 0 0;
+  }
+
+  .theme-shot-dark {
+    border-radius: 0 0 18px 18px;
   }
 
   .site-footer,
