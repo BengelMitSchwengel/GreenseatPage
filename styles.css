@@ -341,7 +341,7 @@ main {
 
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 18px;
 }
 
@@ -359,6 +359,11 @@ main {
   padding: 22px;
   display: grid;
   gap: 12px;
+}
+
+.feature-card--highlight {
+  background: linear-gradient(180deg, rgba(120, 197, 154, 0.16), rgba(255, 255, 255, 0.98));
+  border-color: rgba(31, 92, 71, 0.2);
 }
 
 .feature-icon {
@@ -381,7 +386,7 @@ main {
 
 .screens-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -391,12 +396,42 @@ main {
   gap: 14px;
 }
 
+.theme-showcase {
+  padding: 18px;
+  gap: 16px;
+}
+
+.theme-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.theme-shot {
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
 .screen-card img {
   border-radius: 18px;
   aspect-ratio: 9 / 16;
   object-fit: cover;
   width: 100%;
   background: #edf4ef;
+}
+
+.theme-label {
+  display: inline-flex;
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(31, 92, 71, 0.08);
+  color: var(--brand);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .screen-card h3 {
@@ -564,6 +599,10 @@ main {
     grid-template-columns: 1fr;
   }
 
+  .theme-pair {
+    grid-template-columns: 1fr;
+  }
+
   .site-footer,
   .cta-actions {
     flex-direction: column;
@@ -574,4 +613,5 @@ main {
     width: 100%;
   }
 }
+
 
