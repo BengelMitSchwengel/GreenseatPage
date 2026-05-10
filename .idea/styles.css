@@ -1,0 +1,86 @@
+/* ================= styles.css ================= */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  color: #111;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #eee;
+  background: white;
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  color: #2e7d5b;
+  margin: 0;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #555;
+}
+
+.hero {
+  height: 90vh;
+  background: url('https://raw.githubusercontent.com/BengelMitSchwengel/GreenseatPage/main/map.jpeg') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.button {
+  padding: 14px 28px;
+  background: #2e7d5b;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.section {
+  padding: 80px 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.screens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.phone {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.phone img { width: 100%; }
+
+.features {
+  display: grid;
+}
