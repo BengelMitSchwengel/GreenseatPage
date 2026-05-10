@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 }
 
-.features {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-gap: 20px;
+.feature h3 {
+margin-top: 0;
 }
 
-.feature {
-background: #1a1a1a;
-padding: 20px;
-border-radius: 16px;
+.cta {
 text-align: center;
+padding: 80px 20px;
+background: #f6f6f6;
 }
 
 footer {
-text-align: center;
 padding: 30px;
-background-color: #121212;
+text-align: center;
 font-size: 14px;
-color: #aaa;
+color: #777;
+border-top: 1px solid #eee;
 }
 
 footer a {
@@ -27,6 +24,7 @@ color: #2e7d5b;
 text-decoration: none;
 margin-left: 10px;
 }
+
 </style>
 </head>
 <body>
@@ -34,55 +32,53 @@ margin-left: 10px;
 <header>
   <h1>GreenSeat</h1>
   <nav>
+    <a href="#screens">Screens</a>
     <a href="#features">Features</a>
-    <a href="#screens">Screenshots</a>
     <a href="privacy.html">Datenschutz</a>
   </nav>
 </header>
 
 <section class="hero">
-  <h2>Finde deinen perfekten Platz 🌿</h2>
-  <p>Entdecke schöne Sitzplätze in deiner Umgebung, speichere Favoriten und teile neue Orte mit anderen.</p>
-  <a href="#" class="button">App entdecken</a>
+  <div class="hero-content">
+    <h2>Entdecke die besten Plätze draußen</h2>
+    <p>Finde Bänke, speichere Lieblingsorte und teile neue Spots mit anderen.</p>
+    <a href="#" class="button">App herunterladen</a>
+  </div>
 </section>
 
-<div class="container">
+<section id="screens" class="section">
+  <h2>So sieht GreenSeat aus</h2>
+  <div class="screens">
+    <div class="phone"><img src="https://raw.githubusercontent.com/BengelMitSchwengel/GreenseatPage/main/map.jpeg"></div>
+    <div class="phone"><img src="https://raw.githubusercontent.com/BengelMitSchwengel/GreenseatPage/main/favorites.jpeg"></div>
+    <div class="phone"><img src="https://raw.githubusercontent.com/BengelMitSchwengel/GreenseatPage/main/addbench.jpeg"></div>
+    <div class="phone"><img src="https://raw.githubusercontent.com/BengelMitSchwengel/GreenseatPage/main/myprofile.jpeg"></div>
+  </div>
+</section>
 
-  <div id="screens" class="section">
-    <h2>App Screenshots</h2>
-    <div class="gallery">
-      <div class="phone">
-        <img src="https://raw.githubusercontent.com/BengelMitSchwengel/GreenseatPage/main/map.jpeg">
-      </div>
-      <div class="phone">
-        <img src="https://raw.githubusercontent.com/BengelMitSchwengel/GreenseatPage/main/favorites.jpeg">
-      </div>
-      <div class="phone">
-        <img src="https://raw.githubusercontent.com/BengelMitSchwengel/GreenseatPage/main/addbench.jpeg">
-      </div>
-      <div class="phone">
-        <img src="https://raw.githubusercontent.com/BengelMitSchwengel/GreenseatPage/main/myprofile.jpeg">
-      </div>
+<section id="features" class="section">
+  <h2>Warum GreenSeat?</h2>
+  <div class="features">
+    <div class="feature">
+      <h3>📍 Entdecken</h3>
+      <p>Finde neue Orte in deiner Nähe.</p>
+    </div>
+    <div class="feature">
+      <h3>❤️ Speichern</h3>
+      <p>Markiere deine Lieblingsplätze.</p>
+    </div>
+    <div class="feature">
+      <h3>➕ Teilen</h3>
+      <p>Füge neue Bänke für andere hinzu.</p>
     </div>
   </div>
+</section>
 
-  <div id="features" class="section">
-    <h2>Features</h2>
-    <div class="features">
-      <div class="feature">📍 Interaktive Karte</div>
-      <div class="feature">❤️ Favoriten speichern</div>
-      <div class="feature">➕ Neue Spots hinzufügen</div>
-      <div class="feature">🌙 Dark Mode</div>
-    </div>
-  </div>
-
-  <div class="section card" style="text-align:center;">
-    <h2>Jetzt starten</h2>
-    <p>Lade die App herunter und entdecke neue Orte.</p>
-    <a href="#" class="button">Download</a>
-  </div>
-
-</div>
+<section class="cta">
+  <h2>Bereit rauszugehen?</h2>
+  <p>Hol dir die App und entdecke neue Orte.</p>
+  <a href="#" class="button">Download</a>
+</section>
 
 <footer>
   © 2026 GreenSeat
